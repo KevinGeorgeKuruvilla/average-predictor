@@ -6,37 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Average predicor</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
-    <div class="container">
-      <form>
-        <div class="calculator-grid">
-          <h1>Average Stock Predictor</h1>
-
-          <div>
-            Initial Price Paid :
-            <input type="number" class="initial-price first" /><br />
-          </div>
-          <div>
-            Initial shares bought :
-            <input type="number" class="initial-shares first" /><br />
-          </div>
-          <div>
-            Current prize:
-            <input type="number" class="current-prize first" /><br />
-          </div>
-          <div>
-            Desired average :
-            <input type="number" class="avg-needed first" /><br />
-          </div>
-          <div>
+    <section class="section-avs">
+      <div class="container avs">
+        <div class="avs-text-box">
+          <h2 class="headind-sec">Average Stock Predictor</h2>
+          <form class="avs-form">
+            <div>
+              <label for="Initial-prize">Initial prize</label>
+              <input
+                id="Initial-prize"
+                type="text"
+                placeholder="Initial price"
+                required
+              />
+            </div>
+            <div>
+              <label for="Initial-shares">Initial shares</label>
+              <input
+                id="Initial-shares"
+                type="text"
+                placeholder="Initial shares"
+                required
+              />
+            </div>
+            <div>
+              <label for="current-prize">Current prize</label>
+              <input
+                id="current-prize"
+                type="text"
+                placeholder="Current prize"
+                required
+              />
+            </div>
+            <div>
+              <label for="desired-average">Desired Average</label>
+              <input
+                id="desired-average"
+                type="text"
+                placeholder="Desired average"
+                required
+              />
+            </div>
             <button type="button" class="button">Calculate</button>
-          </div>
-          Stocks to buy =
-          <p class="result first"></p>
+            <div>
+              <label for="Stocks to buy">Stocks to buy</label>
+              <input
+                id="Stocks-to-buy"
+                type="text"
+                placeholder="Stocks to buy"
+              />
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
+        <div class="avs-image-box" role="img" aria-label="stock average"></div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

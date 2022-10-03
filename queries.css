@@ -1,0 +1,22 @@
+@media (max-width: 34em) {
+  .avs {
+    grid-template-columns: 1fr;
+    height: 60rem;
+  }
+  .avs-image-box {
+    height: 5rem;
+    grid-row: 1;
+  }
+  .avs-text-box {
+    padding: 2.4rem 3rem 3rem 3rem;
+  }
+  .avs-form {
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}

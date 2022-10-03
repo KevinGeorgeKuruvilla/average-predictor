@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
@@ -8,42 +6,86 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, #31e1f7, #d2daff);
+  /* background: linear-gradient(to right, #31e1f7, #d2daff); */
 }
-h1 {
-  color: #400d51;
-  background-color: #fffae7;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.section-avs {
+  padding: 9.6rem 0;
 }
-.calculator-grid {
+.avs {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  min-height: 75vh;
-  grid-template-columns: repeat(1, 400px);
-  grid-template-rows: repeat(1, 70px);
-}
-.container {
-  min-height: 75vh;
-  max-width: 70vh;
-  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  background-color: #d2daff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 11px;
+  height: 40rem;
+  background-image: linear-gradient(to right bottom, #d2daff, #aac4ff);
+  overflow: hidden;
+}
+.avs-text-box {
+  padding: 4.8rem, 6.4rem, 6.4rem, 6.4rem;
+  color: #45260a;
+}
+.avs .heading-sec {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  background-color: #fdf2e9;
+}
+.avs-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(229, 100%, 91%, 0.3),
+      hsla(222, 100%, 83%, 0.3)
+    ),
+    url("nick-chong-N__BnvQ_w18-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.avs-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+.avs-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.avs-form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 7px;
+}
+.avs-form input::placeholder {
+  color: #aaa;
 }
 .button {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 9px;
   cursor: pointer;
-  font-size: 2rem;
-  border: 1px solid #31e1f7;
-  border-radius: 12px;
-  outline: none;
-  background-color: #eef1ff;
-}
-.first {
-  outline: none;
-  background: none;
-  border: 1px solid #400d51;
-  font-size: 2rem;
-  border-radius: 6px;
+  font-family: inherit;
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.3s;
 }
 .button:hover {
-  background-color: #d2daff;
+  color: #555;
+  background-color: #fff;
+}
+.avs-form button {
 }
