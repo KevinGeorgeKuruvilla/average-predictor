@@ -1,11 +1,8 @@
 @media (max-width: 34em) {
   .avs {
     grid-template-columns: 1fr;
-<<<<<<< HEAD
-    height: 62rem;
-=======
+
     height: 66rem;
->>>>>>> 308503b74d29b8ce9dc9a385d6bedf886b18e05e
   }
   .avs-image-box {
     height: 5rem;
@@ -20,12 +17,7 @@
     row-gap: 1rem;
   }
   h2 {
-<<<<<<< HEAD
-    margin-bottom: 2rem;
-=======
     margin-bottom: 3rem;
     font-size: 2rem;
-
->>>>>>> 308503b74d29b8ce9dc9a385d6bedf886b18e05e
   }
 }
