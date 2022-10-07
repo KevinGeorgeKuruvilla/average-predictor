@@ -14,5 +14,5 @@ button.addEventListener("click", function () {
     initialPricePaid * initialShares -
     (desiredaverage * initialShares) / divider;
   console.log(value);
-  result.textContent = value;
+  result.value = value;
 });
